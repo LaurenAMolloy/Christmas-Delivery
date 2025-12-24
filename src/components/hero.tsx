@@ -11,11 +11,15 @@ interface HeroProps {
 export default function Hero(props: HeroProps) {
   return (
     <div className='relative h-screen'>
-        <div className='absolute -z-10 inset-0'>
+        <div className='absolute -z-10 inset-0 bg-slate-900'>
             <Image
             src={props.imgData}
             alt={props.imgAlt}
-            fill style={{ objectFit: 'cover'}} ></Image>
+            priority
+            placeholder="blur"
+            fill
+            sizes='100vw' 
+            style={{ objectFit: 'cover'}} ></Image>
         <div className="absolute inset-0 bg-linear-to-r
          from-slate-900/90
          via-slate-800/70
