@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  --font-mountains: 'Mountains of Christmas', cursive;
+}
+
+body {
+  font-family: var(--font-mountains), Times New Roman, serif;
+}
